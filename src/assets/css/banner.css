@@ -1,0 +1,149 @@
+body,html{
+  box-sizing: border-box;
+}
+
+/* ============== container 樣式 ============*/
+.b-container{
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 414px) {
+  .b-container{
+    width: 100%;
+  }
+}
+
+/* ============== Banner 樣式 ============*/
+/* Banner Wrap */
+.banner-wrap{
+  position: relative;
+  display: flex;
+  font-family: 'Noto Sans TC', sans-serif;
+  text-decoration: none;
+  margin: 10px 0;
+}
+.size-lg{
+  width: 100%; 
+}
+.size-sm{
+  width: 49%; 
+}
+
+
+/* Banner content 樣式 */
+.banner-content{
+  position: absolute;
+  z-index: 100;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 50%;
+  text-align: center;
+}
+.banner-content section{
+  margin: 0;
+}
+.postion-left{
+  left: 0;
+  width: 50%;
+  padding: 90px 20px 0px 20px;
+}
+.postion-right{
+  right: 0;
+  width: 50%;
+  padding: 80px 20px 0px 20px;
+}
+.postion-top{
+  top: 0;
+  width: 100%;
+}
+.postion-bottom{
+  bottom: 0;
+  width: 100%;
+}
+@media only screen and (max-width: 414px) {
+  .banner-content{
+    padding: 30px 20px 0 20px;
+  }
+}
+
+
+
+/* Banner bg 樣式 */
+.banner-bg img{
+  width: 100%;
+}
+
+
+/* Banner text 樣式 */
+.banner-text .title{
+  font-size: 30px;
+  color: #ee5d79;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.banner-text .sub-title{
+  font-size: 20px;
+  color: #363636;
+}
+@media only screen and (max-width: 414px) {
+  .banner-text .title{
+    font-size: 12px;
+    margin: 5px 0;
+  }
+  .banner-text .sub-title{
+    font-size: 12px;
+    margin: 5px 0;
+  }
+}
+
+/* Banner price 樣式 */
+.banner-price{
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+.banner-price .price-discount{
+  font-size: 30px;
+  font-weight: bold;
+  color: #ee5d79;
+}
+.banner-price .price-origin{
+  font-size: 15px;
+  color: #bbbcbc;
+  text-decoration: line-through;
+  margin: 0 10px;
+}
+@media only screen and (max-width: 414px) {
+  .banner-price .price-discount{
+    font-size: 12px;
+  }
+  .banner-price .price-origin{
+    font-size: 12px;
+    margin: 0 5px;
+  }
+}
+
+/* Banner cta 樣式 */
+.banner-cta button{
+  display: inline-block;
+  background-color: #ee5d79;
+  color: #fff;
+  padding: 5px 20px;
+  -webkit-appearance: none;
+  border: 0;
+  outline: none;
+  margin: 20px 0;
+}
+@media only screen and (max-width: 414px) {
+  .banner-cta button{
+    padding: 2px 5px;
+    margin: 5px 0;
+    font-size: 12px;
+  }
+}
+
+
+
