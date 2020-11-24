@@ -15,14 +15,13 @@
         </section>
       </div>
       <div class="banner-bg">
-        <img :src="backgroundSrc">
+        <img :src="backgroundSrc" />
       </div>
     </a>
   </div>
 </template>
 
 <script>
-
 export default {
   name: "Banner",
   props: {
@@ -143,7 +142,4 @@ export default {
 };
 </script>
 
-<style scoped>
-@import "../assets/css/normalize.css";
-@import "../assets/css/banner.css";
-</style>
+<style scoped></style>
